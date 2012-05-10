@@ -1,4 +1,4 @@
-package com.redhat.qe.auto.testng;
+package com.redhat.qe;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,6 +10,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.redhat.qe.jul.TestRecords;
 
 
 
@@ -750,7 +752,7 @@ public class Assert {
   }
   
   protected static void pass(String message){
-	  log.log(Level.INFO, "Asserted: " + message, LogMessageUtil.Style.Asserted);
+	  log.log(Level.INFO, "Asserted: " + message, TestRecords.Style.Asserted);
   }
  
   /**
